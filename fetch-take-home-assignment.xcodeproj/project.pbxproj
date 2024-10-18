@@ -6,8 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		13BEC2682CC2E29F008BC386 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 13BEC2672CC2E29F008BC386 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13F99A332CC0602D00B41B59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F999DC2CBF6CA100B41B59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13F999E32CBF6CA100B41B59;
+			remoteInfo = "fetch-take-home-assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		13BEC2672CC2E29F008BC386 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		13F999E42CBF6CA100B41B59 /* fetch-take-home-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fetch-take-home-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F99A2F2CC0602D00B41B59 /* fetch-take-home-assignment-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fetch-take-home-assignment-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +45,22 @@
 			path = "fetch-take-home-assignment";
 			sourceTree = "<group>";
 		};
+		13F99A302CC0602D00B41B59 /* fetch-take-home-assignment-tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "fetch-take-home-assignment-tests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13F999E12CBF6CA100B41B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F99A2C2CC0602D00B41B59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +73,9 @@
 		13F999DB2CBF6CA100B41B59 = {
 			isa = PBXGroup;
 			children = (
+				13BEC2672CC2E29F008BC386 /* README.md */,
 				13F999E62CBF6CA100B41B59 /* fetch-take-home-assignment */,
+				13F99A302CC0602D00B41B59 /* fetch-take-home-assignment-tests */,
 				13F999E52CBF6CA100B41B59 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				13F999E42CBF6CA100B41B59 /* fetch-take-home-assignment.app */,
+				13F99A2F2CC0602D00B41B59 /* fetch-take-home-assignment-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +114,29 @@
 			productReference = 13F999E42CBF6CA100B41B59 /* fetch-take-home-assignment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		13F99A2E2CC0602D00B41B59 /* fetch-take-home-assignment-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F99A352CC0602D00B41B59 /* Build configuration list for PBXNativeTarget "fetch-take-home-assignment-tests" */;
+			buildPhases = (
+				13F99A2B2CC0602D00B41B59 /* Sources */,
+				13F99A2C2CC0602D00B41B59 /* Frameworks */,
+				13F99A2D2CC0602D00B41B59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F99A342CC0602D00B41B59 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				13F99A302CC0602D00B41B59 /* fetch-take-home-assignment-tests */,
+			);
+			name = "fetch-take-home-assignment-tests";
+			packageProductDependencies = (
+			);
+			productName = "fetch-take-home-assignment-tests";
+			productReference = 13F99A2F2CC0602D00B41B59 /* fetch-take-home-assignment-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +149,10 @@
 				TargetAttributes = {
 					13F999E32CBF6CA100B41B59 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					13F99A2E2CC0602D00B41B59 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 13F999E32CBF6CA100B41B59;
 					};
 				};
 			};
@@ -113,12 +171,21 @@
 			projectRoot = "";
 			targets = (
 				13F999E32CBF6CA100B41B59 /* fetch-take-home-assignment */,
+				13F99A2E2CC0602D00B41B59 /* fetch-take-home-assignment-tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13F999E22CBF6CA100B41B59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BEC2682CC2E29F008BC386 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F99A2D2CC0602D00B41B59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +202,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13F99A2B2CC0602D00B41B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13F99A342CC0602D00B41B59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13F999E32CBF6CA100B41B59 /* fetch-take-home-assignment */;
+			targetProxy = 13F99A332CC0602D00B41B59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13F999F82CBF6CA100B41B59 /* Debug */ = {
@@ -151,8 +233,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,9 +243,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charlesprutting.fetch-take-home-assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -179,8 +264,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,9 +275,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.charlesprutting.fetch-take-home-assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -313,6 +402,42 @@
 			};
 			name = Release;
 		};
+		13F99A362CC0602D00B41B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27A6C26J8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.charlesprutting.fetch-take-home-assignment-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fetch-take-home-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fetch-take-home-assignment";
+			};
+			name = Debug;
+		};
+		13F99A372CC0602D00B41B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27A6C26J8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.charlesprutting.fetch-take-home-assignment-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fetch-take-home-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fetch-take-home-assignment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +455,15 @@
 			buildConfigurations = (
 				13F999F82CBF6CA100B41B59 /* Debug */,
 				13F999F92CBF6CA100B41B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F99A352CC0602D00B41B59 /* Build configuration list for PBXNativeTarget "fetch-take-home-assignment-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F99A362CC0602D00B41B59 /* Debug */,
+				13F99A372CC0602D00B41B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
