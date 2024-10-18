@@ -8,12 +8,12 @@ I mainly focused on loading and caching the recipes and recipe photos instead of
 I spent about 8 hours on this. I started by setting up and verifying network protocols, and then created the UI at the end.
 
 # Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
-For the sake of time I didn't mkae the UI as intersting as I could have, but I think it still looks nice. I would have liked to build the the UI with SwiftUI, but I decided to use UIKit for speeds sake since I am very familar with UICollectionView
+For the sake of time I didn't mkae the UI as intersting as I could have, but I think it still looks nice. And I implented a nice little sorting feature! I would have liked to build the the UI with SwiftUI, but I decided to use UIKit for speeds sake since I am very familar with UICollectionView
 
 # Weakest Part of the Project: What do you think is the weakest part of your project?
 I noticed at the end that I am not properly decoding some utf-8 special characters in the JSON data! I did some poking around and I THINK it's because the JSON data is compressed with Brotli compression and I don't have it properly set-up to decompress that, but I didn't have time to further investiagte and left it as is.
 
-I also didn't dp a crazy amount of unit testing, just basic stuff for my networking classes.
+I also didn't do a crazy amount of unit testing, just basic stuff for my networking classes.
 
 # External Code and Dependencies: Did you use any external code, libraries, or dependencies?
 Yes, I re-used some of my own code for the networking classes! No need to re-build the wheel =)
